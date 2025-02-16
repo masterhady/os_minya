@@ -9,3 +9,6 @@ function task4(){
 
 
 hellllllllllllllllllllllllllllllllllllloooooooooooo
+function task5(){
+    var task5 = "dfvhjbdkfv"
+}
