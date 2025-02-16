@@ -24,3 +24,28 @@ git push origin BRANECH_NAME
 to create and checkout in the same command: 
         git checkout -b NEW_BRANECH_NAME
 git fetch --> to pull all branches 
+
+git stash --> to save the changes temp. 
+git stash pop --> to apply the changes
+_____________________________________________________ 
+
+1- git branch 
+2- git checkout Master 
+3- git branch
+4- git pull origin Master
+5- git checkout -b NEW_BRANECH_NAME
+6- aftre your changes --> git add . 
+                          git commit -m "Your Msg"
+                          git push origin NEW_BRANECH_NAME 
+7- git checkout Master 
+8- git pull origin Master 
+9- If there are any updates --> 
+        git checkout NEW_BRANECH_NAME
+        git merge Master  --> aftre TEST 
+        git push origin NEW_BRANECH_NAME 
+
+10- git checkout Master
+11- git merge NEW_BRANECH_NAME
+12- git push origin Master
+________________________________________________________________
+
