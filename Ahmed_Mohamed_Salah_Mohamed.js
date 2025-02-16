@@ -2,6 +2,6 @@ function Ahmed_Mohamed_Salah () {
     var as="Ahmed Mohamed Salah"
 }
 // what is realy full mistake is not to use them
-hbfvjb
-dfbvjbdf
-by new branch 
+function task4(){
+    var name="Ahmed Mohamed Salah"
+}
