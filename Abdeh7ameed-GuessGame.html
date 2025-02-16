@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <span>Counter: </span><span id="counter"></span><br>
+    <input type="text" id="input" />
+    <div id="output"></div>
+
+    <script>
+        var counterOut = document.getElementById('counter');
+        
+        var input = document.getElementById('input');
+        var text = document.getElementById('input').value;
+        
+        var output = document.getElementById('output');
+        var arrayNames = ["Abdelhameed","Abdelhamid","Adam","Hager", "Bakr", "Othman", "Marihan", "Nawal", "Zakaria", "Mousa", "Nahed", "Farid", "Wael", "Salah", "Maged", "Rehab", "Hoda", "Ibrahim", "Malek","Hamed" ,"Ahmed", "Mohamed", "Ali", "Mohsen", "Hassen", "Harbi", "Taha", "Mido", "Omar", "Aya", "Zainb", "Fatma", "Salma", "Yassin", "Nor", "Rasha", "Shadia", "Fares", "Rabi3", "Esraa"]; 
+        var guessName = arrayNames[Math.round(Math.random() * 40)];
+        console.log(arrayNames.length);
+        console.log(guessName);
+    
+        let counter = parseInt(0);
+        let i = 0;
+        
+        input.addEventListener("keyup", function (e) {
+            var currentText = input.value;
+
+            if (currentText[i].toUpperCase() === guessName[i].toUpperCase()) {
+                output.innerText += guessName[i];
+                counterOut.innerText = ++counter;
+                ++i;
+            }else{
+               counterOut.innerText = ++counter;
+               input.value = currentText.slice(0, -1);
+            }
+            if(i === guessName.length){
+                input.disabled =true;
+            }
+
+        });
+
+    </script>
+</body>
+
+</html>
