@@ -1,0 +1,26 @@
+1- SSH key 
+    generate ssh-keygen 
+
+    1- public 
+
+    2- private 
+1- ssh-keygen -t rsa -b 4096 -C "masterhady1@gmail.com"
+2-  cat /home/iti/.ssh/id_rsa.pub   
+3- --> github --> settings --> ssh and gpg keys --> generate new ssh key 
+4- --> add ssh key --> paste public key
+5- git clone FOR-SSH-LNIK 
+
+_____________________________________________________
+
+git branch   --> MAster 
+
+git branch BRANECH_NAME --> create new branch 
+
+git checkout BRANECH_NAME --> to move to the branch
+
+git add . 
+git commit -m "message"
+git push origin BRANECH_NAME 
+to create and checkout in the same command: 
+        git checkout -b NEW_BRANECH_NAME
+git fetch --> to pull all branches 
